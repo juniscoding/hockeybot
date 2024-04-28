@@ -16,8 +16,7 @@ bot = tweepy.Client(
     access_token_secret= os.environ['ACCESS_TOKEN_SECRET'])
 
 def post_quote():
-	key = random.choice(list(data.keys()))
-	quotes = data[key]
+	quotes = data["quotes"]
 	random_index = random.randint(0, len(quotes)-1)
 	quote = quotes[random_index]
 	try:

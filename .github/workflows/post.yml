@@ -2,7 +2,7 @@ name: "Post quote"
 
 on:
   schedule:
-    - cron: '30 * * * *'
+    - cron: '10 * * * *'
   
   # push:
   #   branches:
