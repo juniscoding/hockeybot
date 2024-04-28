@@ -1,12 +1,11 @@
 name: "Post quote"
 
 on:
-  schedule:
-    - cron: '30 * * * *'
-  
-  # push:
-  #   branches:
-  #     - main
+  # schedule:
+  #   - cron: '30 * * * *'
+  push:
+    branches:
+      - main
 jobs:
   build:
     environment: login
